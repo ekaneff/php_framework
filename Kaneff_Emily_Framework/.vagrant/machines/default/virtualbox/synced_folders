@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/Users/emilykaneff/Desktop/Server Side Languages/Kaneff_Emily_Framework","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/emilykaneff/Desktop/Server Side Languages/Kaneff_Emily_Framework","disabled":false,"__vagrantfile":true}}}
