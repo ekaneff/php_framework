@@ -15,6 +15,7 @@
         <li><a href="/auth/logout">Logout</a></li>
       <?}else{?>
         <li><button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#myModal">Log in</button></li>
+        <li><a href="/register" class="btn btn-primary navbar-btn">Register</a></li>
       <?}?>
 	</ul>
 </nav>

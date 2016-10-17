@@ -62,8 +62,6 @@ class AppController{
 		$model = new $page($this);
 		return $model;
 
-		//add this later
-		//get then pass data to that page(view)
 	}
 
 }

@@ -7,14 +7,14 @@ h1 {
 	text-align: center;
 }
 
-a {
+nav a {
 	text-decoration: none;
 	color: white;
 	display: block;
 	padding: 15px;
 }
 
-a:visited {
+nav a:visited {
 	color: white;
 	text-decoration: none;
 }
@@ -29,7 +29,7 @@ nav a:hover {
 ul {
 	list-style: none;
 	padding: 0;
-	width: 35%;
+	width: 60%;
 	margin: 0 auto;
 	float: right;
 }

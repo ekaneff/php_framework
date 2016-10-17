@@ -1,15 +1,10 @@
 <?
 
-class carousel extends AppController{
+class register extends AppController {
+	public function __construct($parent) {
+		$this->parent = $parent;
 
-	public function __construct($pars) {
-		
-
-	}
-
-	public function index($pars) {
-		$pars = $pars->urlPathParts[0];
-
+		$pars = $this->parent->urlPathParts[0];
 		$buttons = array(
 			"main"=>array("pagename"=>"main","title"=>"home title","link"=>"/main","urlname"=>$pars),
 			"carousel"=>array("pagename"=>"carousel","title"=>"car title","link"=>"/carousel","urlname"=>$pars),
@@ -21,10 +16,16 @@ class carousel extends AppController{
 
 		$this->getView("header");
 		$this->getView("navigation", $buttons);	
-		$this->getView("carousel");
+		$this->getView("register");
 		$this->getView("footer");
+
 	}
 
+	public function registerUser(){
+		$data = $this->parent->getModel("users")->add("insert into users (username,password) values (:username, :password)", array(":username"=>$_REQUEST["username"], ":password"=>sha1($_REQUEST["password"])));
+		$_SESSION["loggedin"] = 1;
+		header("location:/main");
+	}
 }
 
 ?>

@@ -52,8 +52,6 @@ echo "<img src='/assets/image1.png'>";
 
 ?>
 
-
-
 <form action="/form/getInputs" method="POST">
   <div class="form-group">
     <div>

@@ -15,12 +15,16 @@ class profile extends AppController {
 		$buttons = array(
 			"main"=>array("pagename"=>"main","title"=>"home title","link"=>"/main","urlname"=>$pars),
 			"carousel"=>array("pagename"=>"carousel","title"=>"car title","link"=>"/carousel","urlname"=>$pars),
-			"form"=>array("pagename"=>"form","title"=>"form","link"=>"/form","urlname"=>$pars)
+			"form"=>array("pagename"=>"form","title"=>"form","link"=>"/form","urlname"=>$pars),
+			"about"=>array("pagename"=>"about","title"=>"about","link"=>"/about","urlname"=>$pars),
+			"SO Api"=>array("pagename"=>"soapi","title"=>"Stack Overflow","link"=>"/api/stackApi","urlname"=>$pars),
+			"Books Api"=>array("pagename"=>"booksapi","title"=>"Google Books","link"=>"/api/showApi","urlname"=>$pars)
 			);
 		
 		$this->getView("header");
 		$this->getView("navigation", $buttons);
-		echo $_SESSION["par"];
+		echo "This is the profile page";
+		//echo $_SESSION["par"];
 	}
 }
 

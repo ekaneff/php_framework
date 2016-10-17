@@ -1,5 +1,5 @@
 <?
-class fruits {
+class users {
 
 	public function __construct($parent){
 		$this->db = $parent->db;
